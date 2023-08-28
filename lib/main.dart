@@ -1,5 +1,6 @@
 import 'package:aaa/pages/detail_page.dart';
 import 'package:aaa/pages/home_page.dart';
+import 'package:aaa/pages/UI_Home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,14 +17,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
 
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
         useMaterial3: true,
 
       ),
-      home: HomePage(),
+      home: UI_Home(),
       routes: {
         HomePage.id :(contex) => HomePage(),
-        DetailPage.id :(context)=>DetailPage(),
+        DetailPage.id :(context)=>DetailPage(input: '',),
+        UI_Home.id:(context)=>UI_Home(),
       },
 
     );
