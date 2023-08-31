@@ -22,17 +22,59 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: TextButton(onPressed: (){
-         // Navigator.pushNamed(context, DetailPage.id);
-          _openDetail();
-        },
-        child: Container(
-          height: 30,
-            width: 150,
-          child: Text("DetailPage"),
-          color: Colors.blue,
-        ),),
+      body: SingleChildScrollView(
+
+        child: Column(
+          children: [
+            SingleChildScrollView(
+              child:Row(
+                children: [
+                  Container(
+                    height: 200,
+                    width: 200,
+                    color: Colors.red,
+
+                  ),
+                  Container(
+                    height: 250,
+                    width: 200,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 250,
+                    width: 200,
+                    color: Colors.yellowAccent,
+                  ),
+                  Container(
+                    height: 250,
+                    width: 200,
+                    color: Colors.green,
+                  )
+                ],
+              ),
+
+            ),
+
+
+            Container(
+              height: 200,
+              color: Colors.red,
+
+            ),
+            Container(
+              height: 250,
+              color: Colors.blue,
+            ),
+            Container(
+              height: 250,
+              color: Colors.yellowAccent,
+            ),
+            Container(
+              height: 250,
+              color: Colors.green,
+            )
+          ],
+        ),
       ),
     );
   }
