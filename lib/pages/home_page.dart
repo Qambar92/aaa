@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   Future _openDetail()async{
     Navigator.of(context).push(new MaterialPageRoute(
         builder: (BuildContext contex){
-          return new DetailPage(input: "Pdp Online");
+          return new DetailPage();
         }));
   }
   @override

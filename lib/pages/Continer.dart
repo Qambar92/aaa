@@ -32,9 +32,9 @@ class _ContinerState extends State<Continer> {
                 begin: Alignment.bottomRight,
                 colors: [
                   Colors.black.withOpacity(0.9),
-                  Colors.black.withOpacity(0.5),
-                  Colors.black.withOpacity(0.5),
-                  Colors.black.withOpacity(0.1),
+                  Colors.black.withOpacity(0.8),
+                  Colors.black.withOpacity(0.4),
+                  Colors.black.withOpacity(0.2),
                 ]
               )
             ),
