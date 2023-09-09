@@ -5,9 +5,7 @@ import 'package:http/http.dart';
 
 class Network{
   static String BASE = "jsonplaceholder.typicode.com";
-  static Map<String,String> headers ={
-    'Content-type': 'application/json; charset=UTF-8'
-  };
+  static Map<String,String> headers ={'Content-type': 'application/json; charset=UTF-8'};
 
   /*  Http Apis */
   static String API_List = "/posts";
@@ -82,11 +80,3 @@ static Future<String?>GET(String api,Map<String,String>params)async{
     return params;
   }
 }
-
-//<uses-permission android:name="android.permission.INTERNET"/>
-
-/*<key>NSAppTransportSecurity</key>
-<dict>
-<key>NSAllowsArbitraryLoads</key>
-<true/>
-</dict>*/
