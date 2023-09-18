@@ -12,6 +12,8 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:hive/hive.dart';
 
+import 'Network/network2.dart';
+
 void main() {
   HttpOverrides.global = MyHttpOverrides();
   runApp(const MyApp());
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: UI(),
+      home: DetailPage(),
       routes: {
         HomePage.id: (contex) => HomePage(),
         DetailPage.id: (context) => DetailPage(),
@@ -38,6 +40,7 @@ class MyApp extends StatelessWidget {
         Pagewiu.id: (context) => Pagewiu(),
         Continer.id: (context) => Continer(),
         Network_Page.id: (context) => Network_Page(),
+        Network2.id: (context) => Network2(),
         UI.id: (context) => UI(),
       },
     );

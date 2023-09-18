@@ -1,17 +1,13 @@
-import 'package:aaa/pages/http_Service.dart';
-import 'package:aaa/pages/post_madel.dart';
+import 'package:aaa/Network/network2.dart';
+
 import 'package:flutter/material.dart';
-import 'package:aaa/pages/network_Page.dart';
+
 
 class DetailPage extends StatefulWidget {
 
   static final String id="detail_page";
 
-  //final String input;
 
- // _DetailPage({required this.input});
-
- // const DetailPage({super.key,});
 
   @override
   State<DetailPage> createState() => _DetailPageState();
@@ -26,11 +22,14 @@ class _DetailPageState extends State<DetailPage> {
     return  Scaffold(
       body: Center(
         child:MaterialButton(
+          height: 60,
+
           color: Colors.blue,
+
           onPressed: (){
-            Navigator.pushNamed(context, Network_Page.id);
+            Navigator.pushNamed(context, Network2.id);
           },
-          child: Text("NettWork"),
+          child: Text("NettWork",style: TextStyle(fontSize: 30,color: Colors.white),),
         )
       ),
     );

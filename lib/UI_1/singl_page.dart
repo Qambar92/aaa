@@ -200,7 +200,7 @@ class _Singl_PageState extends State<Singl_Page> {
                     ),
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text("Chat",style: TextStyle(color: Colors.white,fontSize: 25),),
+                      child: Text("Talabalar",style: TextStyle(color: Colors.white,fontSize: 14),),
                     ),
                   ),
                   Container(
@@ -211,7 +211,18 @@ class _Singl_PageState extends State<Singl_Page> {
                     ),
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text("PlayList",style: TextStyle(color: Colors.white,fontSize: 25),),
+                      child: Text("Chat",style: TextStyle(color: Colors.white,fontSize: 20),),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(10),
+
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("PlayList",style: TextStyle(color: Colors.white,fontSize: 20),),
                     ),
                   ),
                   Container(

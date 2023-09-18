@@ -18,15 +18,18 @@ class _Network_PageState extends State<Network_Page> {
   void initState() {
     super.initState();
     var post = Post(id: 1, title: "PDP", body: "Online", userId: 1);
-    _apiPostList();
+   // _apiGetList();
     // _apiPostCreate(post);
+    //_apiPostUpdate(post);
+    _apiPostDelete(post);
   }
 
-  void _apiPostList() {
+  void _apiGetList() {
     Network.GET(Network.API_List, Network.paramsEmty()).then((response) => {
           LogService.i(response.toString()),
         });
   }
+
 
   void _apiPostCreate(Post post) {
     Network.POST(Network.API_CREATE, Network.paramsCreate(post))

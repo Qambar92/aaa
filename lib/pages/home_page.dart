@@ -19,6 +19,8 @@ class _HomePageState extends State<HomePage> {
           return new DetailPage();
         }));
   }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
