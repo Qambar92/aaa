@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:aaa/UI_1/Avtor_Page.dart';
 import 'package:aaa/pages/Continer.dart';
 import 'package:aaa/pages/GridView_.dart';
 import 'package:aaa/pages/Pagewiu.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: DetailPage(),
+      home: UI(),
       routes: {
         HomePage.id: (contex) => HomePage(),
         DetailPage.id: (context) => DetailPage(),
@@ -42,6 +43,8 @@ class MyApp extends StatelessWidget {
         Network_Page.id: (context) => Network_Page(),
         Network2.id: (context) => Network2(),
         UI.id: (context) => UI(),
+       // Avtor_Page.id: (context) => Avtor_Page(),
+
       },
     );
   }

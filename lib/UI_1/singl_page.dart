@@ -1,3 +1,4 @@
+import 'package:aaa/UI_1/Avtor_Page.dart';
 import 'package:flutter/material.dart';
 
 class Singl_Page extends StatefulWidget {
@@ -118,60 +119,72 @@ class _Singl_PageState extends State<Singl_Page> {
 
 
                         children: [
-                          Container(
-                              height: 50,
-                              width: 50,
-                              // color: Colors.blue,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                image: DecorationImage(
-                                    image: AssetImage(widget.avtorrasm), fit: BoxFit.cover),
-                              )),
+                          GestureDetector(
+                            onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>Avtor_Page()));
+                            },
+                            child: Container(
+                                height: 50,
+                                width: 50,
+                                // color: Colors.blue,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(15),
+                                  image: DecorationImage(
+                                      image: AssetImage(widget.avtorrasm), fit: BoxFit.cover),
+                                )),
+                          ),
                           SizedBox(
                             width: 20,
                           ),
+                          Expanded(
 
-                          Text(
-                            widget.ismavtor,
-                            style: TextStyle(
-                                color: const Color.fromARGB(255, 235, 4, 4),
-                                fontSize: 18,fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            width: 15,
 
-                          ),
+                              child: Row(
 
-                          Text(
-                           widget.Obunachi+ "  Obunachi ",
-                            style:
-                            TextStyle(color: Colors.black, fontSize: 12,fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            width: 30,
-                          ),
-                          Row(
-                             // mainAxisAlignment: MainAxisAlignment.end,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  GestureDetector(
+                                    onTap: (){
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Avtor_Page()));
 
-                            children: [
-                              Text(" "),
-                              Padding(
-                                padding: const EdgeInsets.all(1.0),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(10),
+                                    },
+                                    child: Text(
+                                      widget.ismavtor,
+                                      style: TextStyle(
+                                          color: const Color.fromARGB(255, 235, 4, 4),
+                                          fontSize: 18,fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 20,
 
                                   ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Text("Obuna Bo'lish",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),),
+
+                                  Text(
+                                    widget.Obunachi+ "  Obunachi ",
+                                    style:
+                                    TextStyle(color: Colors.black, fontSize: 12,fontWeight: FontWeight.bold),
                                   ),
-                                ),
+                                  SizedBox(
+                                    width: 20,
+                                  ),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(10),
+
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text("Obuna Bo'lish",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),),
+                                    ),
+                                  ),
+
+
+                                ],
                               ),
-                            ],
                           ),
+
+
 
                         ],
                       ),

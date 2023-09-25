@@ -12,15 +12,15 @@ import 'Post_m.dart';
 
 
 class Network{
-  static String BASE = "dummy.restapiexample.com/api/v1";
+  static String BASE = "dummy.restapiexample.com";
   static Map<String,String> headers ={'Content-type': 'application/json; charset=UTF-8'};
 
   /*  Http Apis */
-  static String API_List = "/employees";
-  static String API_Get_User = "/employee/"; //id
-  static String API_CREATE = "/create";
-  static String API_UPDATE = "/update/"; //Id
-  static String API_DELETE = "/delete/"; //id
+  static String API_List = "/api/v1/employees";
+  static String API_Get_User = "/api/v1/employee/"; //id
+  static String API_CREATE = "/api/v1/create";
+  static String API_UPDATE = "/api/v1/update/"; //Id
+  static String API_DELETE = "/api/v1/delete/"; //id
 
   /*  Http Requests */
 

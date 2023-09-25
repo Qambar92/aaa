@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "740291531627",
+    "project_id": "aaauz-db5a2",
+    "storage_bucket": "aaauz-db5a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740291531627:android:28eeee11895cef24faf22e",
+        "android_client_info": {
+          "package_name": "com.oggi.AAAUz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIjxwTHIaF1gX4CmK3HJPKKuiemlkXC40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
