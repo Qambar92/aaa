@@ -41,61 +41,63 @@ class _Avtor_PageState extends State<Avtor_Page> {
                        borderRadius: BorderRadius.circular(13),
                        color: Colors.grey,
                      ),
-                     child: Padding(
-                       padding: const EdgeInsets.all(15.0),
-                       child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                         children: [
-                           Column(
-                             mainAxisAlignment: MainAxisAlignment.end,
-                             children: [
-                               Icon(Icons.account_box,color: Colors.white,size: 35,),
-                               SizedBox(height: 10,),
-                               Container(
+                     child: Center(
+                       child: Padding(
+                         padding: const EdgeInsets.all(15.0),
+                         child: Row(
+                              //  crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                           children: [
+                             Column(
+                               mainAxisAlignment: MainAxisAlignment.end,
+                               children: [
+                                 Icon(Icons.account_box,color: Colors.white,size: 35,),
+                                 SizedBox(height: 10,),
+                                 Container(
 
 
 
-                                 color: Colors.white,
-                                 child: Text("Obunachi",style: TextStyle(color: Colors.black,fontSize: 14,fontWeight: FontWeight.bold),),
-                               ),
+                                   color: Colors.white,
+                                   child: Text("Obunachi",style: TextStyle(color: Colors.black,fontSize: 14,fontWeight: FontWeight.bold),),
+                                 ),
 
-                             ],
-                           ),
-                           Column(
-                             mainAxisAlignment: MainAxisAlignment.end,
-                             children: [
-                               Icon(Icons.video_camera_back_outlined,color: Colors.white,size: 35,),
-                               SizedBox(height: 10,),
-                               Container(
-
-
-
-                                 color: Colors.white,
-                                 child: Text("Videolar",style: TextStyle(color: Colors.black,fontSize: 14,fontWeight: FontWeight.bold),),
-                               ),
-
-                             ],
-                           ),
-                           Column(
-                             mainAxisAlignment: MainAxisAlignment.end,
-                             children: [
-                               Icon(Icons.recommend,color: Colors.white,size: 35,),
-                               SizedBox(height: 10,),
-                               Container(
+                               ],
+                             ),
+                             Column(
+                               mainAxisAlignment: MainAxisAlignment.end,
+                               children: [
+                                 Icon(Icons.video_camera_back_outlined,color: Colors.white,size: 35,),
+                                 SizedBox(height: 10,),
+                                 SizedBox(height: 10,),
+                                 Container(
 
 
 
-                                 color: Colors.white,
-                                 child: Text("Like",style: TextStyle(color: Colors.black,fontSize: 14,fontWeight: FontWeight.bold),),
-                               ),
+                                   color: Colors.white,
+                                   child: Text("Videolar",style: TextStyle(color: Colors.black,fontSize: 14,fontWeight: FontWeight.bold),),
+                                 ),
+                               ],
+                             ),
+                             Column(
+                               mainAxisAlignment: MainAxisAlignment.end,
+                               children: [
+                                 Icon(Icons.recommend,color: Colors.white,size: 35,),
+                                 SizedBox(height: 10,),
+                                 Container(
 
-                             ],
-                           ),
-                         ],
+
+
+                                   color: Colors.white,
+                                   child: Text("Like",style: TextStyle(color: Colors.black,fontSize: 14,fontWeight: FontWeight.bold),),
+                                 ),
+
+                               ],
+                             ),
+                           ],
+
+                         ),
 
                        ),
-
                      ),
 
 
@@ -116,13 +118,16 @@ class _Avtor_PageState extends State<Avtor_Page> {
                        padding: EdgeInsets.fromLTRB(5,80,5,5),
                        child: Icon(Icons.email_sharp,color: Colors.white,size: 40,),
                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(180),
-                          image: DecorationImage(image: AssetImage("assets/4.jpg"), fit: BoxFit.cover),
-                          border: Border.all(width: 5, color: Colors.red.shade700),
+                      Padding(
+                        padding:  EdgeInsets.fromLTRB(5,0,5,5),
+                        child: Container(
+                          height: 120,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(180),
+                            image: DecorationImage(image: AssetImage("assets/4.jpg"), fit: BoxFit.cover),
+                            border: Border.all(width: 5, color: Colors.red.shade700),
+                          ),
                         ),
                       ),
                      Padding(
